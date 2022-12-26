@@ -40,19 +40,19 @@ export default class VacancyAdd extends React.Component {
                         <form className="">
                             <div className="form-floating mb-3">
                                 <input type="title" name="title" className="form-control rounded-3" id="floatingInput" onChange={(event)=> this.setState({title: event.target.value})} />
-                                <label for="floatingInput">Название</label>
+                                <label htmlFor="floatingInput">Название</label>
                             </div>
                             <div className="form-floating mb-3">
                                 <input type="company" name="company" className="form-control rounded-3" id="floatingInput" onChange={(event)=> this.setState({company: event.target.value})}  />
-                                <label for="floatingInput">Компания</label>
+                                <label htmlFor="floatingInput">Компания</label>
                             </div>
                             <div className="form-floating mb-3">
                                 <input type="integer" name="salary" className="form-control rounded-3" id="floatingInput" onChange={(event)=> this.setState({salary: Number(event.target.value)})}  />
-                                <label for="floatingInput">Зарплата</label>
+                                <label htmlFor="floatingInput">Зарплата</label>
                             </div>
                             <div className="form-floating mb-3">
                                 <textarea type="text" name="description" className="form-control rounded-3" id="floatingInput" onChange={(event)=> this.setState({description: event.target.value})}  />
-                                <label for="floatingInput">Описание</label>
+                                <label htmlFor="floatingInput">Описание</label>
                             </div>
                             <button className="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="button" onClick={this.addVacancy}>Добавить</button>
                         </form>
