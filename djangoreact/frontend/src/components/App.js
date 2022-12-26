@@ -1,5 +1,7 @@
-import React, { Component } from "react";
+import React, { Component, Fragment } from "react";
 import { createRoot } from 'react-dom/client';
+import VacancyAdd from "./VacancyAdd";
+import VacancyList from "./VacancyList";
 
 
 export default class App extends Component {
@@ -9,9 +11,11 @@ export default class App extends Component {
 
   render() {
     return (
-        <div>
-            <h1>hello world!</h1>
-        </div>
+        <Fragment>
+            <h1>Вакансии</h1>
+            <VacancyList/>
+            <VacancyAdd/>
+        </Fragment>
     );
   }
 }
